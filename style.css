@@ -75,7 +75,7 @@
 /* Default Styles for Larger Screens */
 .body {
     display: flex;
-    flex-direction: column; /* Change the layout to column for smaller screens */
+    /*flex-direction: column; /* Change the layout to column for smaller screens */
     min-height: 100vh; /* Ensure the content takes at least the full viewport height */
     background-color: rgb(131, 212, 239);
     margin: 10px 0px;
@@ -84,6 +84,15 @@
 
 /* Media Query for Screens Smaller Than 500px */
 @media (max-width: 500px) {
+    .body {
+        display: flex;
+        flex-direction: column; /* Change the layout to column for smaller screens */
+        min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+        background-color: rgb(131, 212, 239);
+        margin: 10px 0px;
+        padding: 10px;
+    }
+    
     /* Responsive Images */
     .card img {
         max-width: 100%;
