@@ -14,4 +14,19 @@
    .hamburger-icon:hover .line {
     background-color: #555;
    }
-   
+/* CSS for hiding the side panel by default */
+.side-panel {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.side-panel.open {
+    width: 250px; /* Adjust the width as needed */
+}   
