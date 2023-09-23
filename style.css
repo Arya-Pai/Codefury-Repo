@@ -1,131 +1,148 @@
-*{
-    padding: 0px;
-    margin:0px
+* {
+    padding: 0;
+    margin: 0;
 }
+
+/* Navbar Styles */
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Ensure the navbar is above other content */
+}
+
+/* Hamburger Icon Styles */
 .hamburger-icon {
- 
     cursor: pointer;
     z-index: 1;
     padding-right: 20px;
-    padding:10px 20px;
+    padding: 10px 20px;
+}
 
-   }
-   
-   .line {
+.line {
     width: 30px;
     height: 3px;
     background-color: rgb(255, 251, 251);
     margin: 6px 0;
     transition: 0.4s;
-  
-    
-   }
-   
-   .hamburger-icon:hover .line {
+}
+
+.hamburger-icon:hover .line {
     background-color: #555;
-   }
-/* CSS for hiding the side panel by default */
+}
+
+/* Side Panel Styles */
 .side-panel {
-    display:flex;
+    display: flex;
     width: 0;
     position: fixed;
     top: 55px;
-    /* right: 0; */
     height: 100%;
     background-color: #333;
     overflow-x: hidden;
     transition: 0.3s;
-    z-index: 0;    
+    z-index: 0;
 }
 
 .side-panel.open {
-    width: 300px; /* Adjust the width as needed */
+    width: 300px;
     display: block;
-} 
-.side-panel ul li{
-    display: flexbox;
+}
+
+.side-panel ul li {
+    display: flex;
     padding: 10px 0px;
     margin: 10px 0px;
     color: aquamarine;
     border-bottom: 1px solid whitesmoke;
     min-height: 30px;
+}
 
-    
-}
-.navbar{
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;;
-}
-.body{
-    display: flex;
-    height: 1000px;
-    background-color:rgb(131, 212, 239);
-    margin:10px 0px;
-    padding: 10px;
-    
-    /* margin: auto; */
-}
-#footer{
-    display: flex ;
-    align-items: center;
-    width: 100%;
-    bottom: 0;
-    border: 1px solid rgb(223, 184, 184);
-    background-color: rgb(65, 63, 63);
-    margin-bottom: 0;
-    position: static;
-    font-weight: bold;
-    color: bisque;
-
-}
-.copyright{
-    width:50%;
-    padding:0% 25% ;
-}
-.contact-items{
-    display:flex;
-    justify-content:center ;
-    width:50%;
-    border-left: 1px solid rgb(205, 145, 145);
-    height: 100px;
-    align-items: center;
-    flex-direction: column;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0px;
-}
-#github{
-    width:30px;
-    height: 30px;
-    display: flex;
-    margin: 10px;
-    
-
-}
-#Email{
-    width :30px;
-    height :  30px;
-    display: flex;
-}
-.side-panel ul li a{
+.side-panel ul li a {
     text-decoration: none;
     color: beige;
-    padding:0% 35%;
-    
-    
+    padding: 0% 35%;
 }
-.side-panel ul li a:hover{
-    font-size:20px;
+
+.side-panel ul li a:hover {
+    font-size: 20px;
 }
-main{
-    background-color: rgb(164, 164, 219);
-    margin: 2px 0px;
+
+/* Default Styles for Larger Screens */
+.body {
+    display: flex;
+    flex-direction: column; /* Change the layout to column for smaller screens */
+    min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+    background-color: rgb(131, 212, 239);
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+/* Media Query for Screens Smaller Than 500px */
+@media (max-width: 500px) {
+    /* Responsive Images */
+    .card img {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    /* Adjust Logo Sizes and Spacing in the Footer */
+    .contact-items img {
+        max-width: 20px; /* Adjust the max-width as needed */
+        height: auto;
+        margin: 0 5px; /* Adjust the margin as needed */
+    }
+    .side-panel.open {
+        width: 150px;
+        display: block;
+    }
+}
+
+/* Footer Styles */
+#footer {
+    border: 1px solid rgb(223, 184, 184);
+    background-color: rgb(65, 63, 63);
+    font-weight: bold;
+    color: bisque;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.copyright {
+    width: 50%;
+    padding: 0% 25%;
+    text-align: center;
+}
+
+.contact-items {
+    display: block;
+    width: 125px;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+}
+
+.contact-items img {
+    max-width: 20px; /* Adjust the max-width as needed */
+    height: auto;
+    margin: 15px; /* Adjust the margin as needed */
+}
+
+
+#github, #Email {
+    display: flex;
+    align-items: center;
+}
+
+/* Make Navbar Sticky */
+.navbar.sticky {
+    position: sticky;
+    top: 0;
 }
