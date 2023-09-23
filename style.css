@@ -74,11 +74,11 @@
     display: flex ;
     align-items: center;
     width: 100%;
-   bottom: 0;
+    bottom: 0;
     border: 1px solid rgb(223, 184, 184);
     background-color: rgb(65, 63, 63);
     margin-bottom: 0;
-    position: relative;
+    position: static;
     font-weight: bold;
     color: bisque;
 
