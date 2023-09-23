@@ -90,6 +90,7 @@
     background-color: rgb(131, 212, 239);
     margin: auto;
     padding: 10px;
+
 }
 .card {
     max-width: 450px;
@@ -97,6 +98,7 @@
 }
 .row{
     display: flex;
+    margin: auto;
 }
 
 /* Media Query for Screens Smaller Than 900px (updated from 500px) */
