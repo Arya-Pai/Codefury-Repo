@@ -1,6 +1,14 @@
+*{
+    padding: 0px;
+    margin:0px
+}
 .hamburger-icon {
-    display: inline-block;
+ 
     cursor: pointer;
+    z-index: 1;
+    padding-right: 20px;
+    padding:10px 20px;
+
    }
    
    .line {
@@ -9,8 +17,63 @@
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+  
+    
    }
    
    .hamburger-icon:hover .line {
     background-color: #555;
    }
+/* CSS for hiding the side panel by default */
+.side-panel {
+    display:flex;
+    width: 0;
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    height: 100%;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.side-panel.open {
+    width: 230px; /* Adjust the width as needed */
+    display: block;
+} 
+.side-panel ul li{
+    display: flexbox;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    color: aquamarine;
+    border-bottom: 1px solid whitesmoke;
+}
+.navbar{
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+section{
+    height:200px;
+    background-color: aqua;
+}
+footer{
+    display: flex ;
+    align-items: center;
+    height:100px;
+    border: 1px solid rgb(223, 184, 184);
+    background-color: rgb(65, 63, 63);
+}
+.copyright{
+    width:50%;
+    padding:0% 25% ;
+}
+.contact-items{
+    display:flex;
+    justify-content:center ;
+    width:50%;
+    border-left: 1px solid rgb(205, 145, 145);
+    height: 100px;
+    align-items: center;
+}
