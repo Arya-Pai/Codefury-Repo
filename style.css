@@ -1,13 +1,15 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Add box-sizing for better layout handling */
 }
 
 /* Navbar Styles */
 .navbar {
     height: 100px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; /* Adjust alignment to space between elements */
+    align-items: center; /* Center vertically */
     background-color: #333;
     position: -webkit-sticky;
     position: sticky;
@@ -20,7 +22,10 @@
     cursor: pointer;
     z-index: 1;
     padding-right: 20px;
-    padding: 10px 20px;
+    padding-left: 20px; /* Add left padding to center the icon */
+    display: flex; /* Center icon vertically within its container */
+    flex-direction: column;
+    align-items: center; /* Center icon vertically within its container */
 }
 
 .line {
@@ -32,7 +37,8 @@
 }
 
 .hamburger-icon:hover .line {
-    background-color: #555;
+    background-color: rgb(255, 251, 251);
+    transform: scale(1.5);
 }
 
 /* Side Panel Styles */
@@ -40,7 +46,7 @@
     display: flex;
     width: 0;
     position: fixed;
-    top: 55px;
+    top: 100px; /* Adjust top position to match navbar height */
     height: 100%;
     background-color: #333;
     overflow-x: hidden;
@@ -65,7 +71,7 @@
 .side-panel ul li a {
     text-decoration: none;
     color: beige;
-    padding: 0% 35%;
+    flex: 1; /* Distribute link text evenly within the list item */
 }
 
 .side-panel ul li a:hover {
@@ -75,22 +81,23 @@
 /* Default Styles for Larger Screens */
 .body {
     display: flex;
-    /*flex-direction: column; /* Change the layout to column for smaller screens */
-    min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+    /*flex-direction: column;*/
+    min-height: 100vh;
     background-color: rgb(131, 212, 239);
-    margin: 10px 0px;
+    margin: auto;
     padding: 10px;
 }
+.card{
+    max-width: 450px;
+    padding: 20px;
+}
 
-/* Media Query for Screens Smaller Than 500px */
-@media (max-width: 500px) {
+/* Media Query for Screens Smaller Than 900px (updated from 500px) */
+@media (max-width: 900px) {
     .body {
-        display: flex;
-        flex-direction: column; /* Change the layout to column for smaller screens */
-        min-height: 100vh; /* Ensure the content takes at least the full viewport height */
-        background-color: rgb(131, 212, 239);
         margin: 10px 0px;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
     
     /* Responsive Images */
@@ -102,10 +109,12 @@
 
     /* Adjust Logo Sizes and Spacing in the Footer */
     .contact-items img {
-        max-width: 20px; /* Adjust the max-width as needed */
+        max-width: 20px;
         height: auto;
-        margin: 0 5px; /* Adjust the margin as needed */
+        margin: 0 5px;
     }
+
+    /* Adjust side-panel width for smaller screens */
     .side-panel.open {
         width: 150px;
         display: block;
@@ -127,23 +136,20 @@
 
 .copyright {
     width: 50%;
-    padding: 0% 25%;
     text-align: center;
 }
 
 .contact-items {
-    display: block;
-    width: 125px;
-    align-items: center;
+    display: flex; /* Change to flex to center vertically */
+    align-items: center; /* Center vertically */
     overflow-x: auto; /* Enable horizontal scrolling if content overflows */
 }
 
 .contact-items img {
-    max-width: 20px; /* Adjust the max-width as needed */
+    max-width: 20px;
     height: auto;
-    margin: 15px; /* Adjust the margin as needed */
+    margin: 0 5px;
 }
-
 
 #github, #Email {
     display: flex;
