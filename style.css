@@ -151,8 +151,81 @@ main{
      
 }
 #About{
-    display:blo;
+    display:block;
     justify-content: center ;
     align-items: center;
 
+}
+@media (max-width: 900px) {
+    .body {
+        display: flex;
+        flex-direction: column; /* Change the layout to column for smaller screens */
+        min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+        background-color: rgb(131, 212, 239);
+        margin: 10px 0px;
+        padding: 10px;
+    }
+    
+    /* Responsive Images */
+    .card img {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    /* Adjust Logo Sizes and Spacing in the Footer */
+    .contact-items img {
+        max-width: 20px; /* Adjust the max-width as needed */
+        height: auto;
+        margin: 0 5px; /* Adjust the margin as needed */
+    }
+    .side-panel.open {
+        width: 150px;
+        display: block;
+    }
+
+
+/* Footer Styles */
+#footer {
+    border: 1px solid rgb(223, 184, 184);
+    background-color: rgb(65, 63, 63);
+    font-weight: bold;
+    color: bisque;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.copyright {
+    width: 50%;
+    padding: 0% 25%;
+    text-align: center;
+}
+
+.contact-items {
+    display: block;
+    width: 125px;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+}
+
+.contact-items img {
+    max-width: 20px; /* Adjust the max-width as needed */
+    height: auto;
+    margin: 15px; /* Adjust the margin as needed */
+}
+
+
+#github, #Email {
+    display: flex;
+    align-items: center;
+}
+
+/* Make Navbar Sticky */
+.navbar.sticky {
+    position: sticky;
+    top: 0;
+}
 }
