@@ -7,9 +7,9 @@ hamburgerIcon.addEventListener('click', () => {
 });
 
 // Function to close the side panel (if needed)
-<<<<<<< HEAD
-=======
+
+
 function closeSidePanel() {
     sidePanel.classList.remove('open');
 }
->>>>>>> f5a67bfb90a92183a45d903d010e6112c86725eb
+

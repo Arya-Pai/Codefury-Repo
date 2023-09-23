@@ -14,7 +14,7 @@
    .line {
     width: 30px;
     height: 3px;
-    background-color: #333;
+    background-color: rgb(255, 251, 251);
     margin: 6px 0;
     transition: 0.4s;
   
@@ -29,7 +29,7 @@
     display:flex;
     width: 0;
     position: fixed;
-    top: 0;
+    top: 55px;
     /* right: 0; */
     height: 100%;
     background-color: #333;
@@ -39,7 +39,7 @@
 }
 
 .side-panel.open {
-    width: 230px; /* Adjust the width as needed */
+    width: 300px; /* Adjust the width as needed */
     display: block;
 } 
 .side-panel ul li{
@@ -53,17 +53,28 @@
     height: 100px;
     display: flex;
     justify-content: flex-end;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;;
 }
-section{
-    height:200px;
-    background-color: aqua;
+.body{
+    display: flex;
+    height: 1000px;
+    background-color:rgb(55, 133, 107);
+    
+    /* margin: auto; */
 }
 footer{
     display: flex ;
     align-items: center;
-    height:100px;
+    width: 100%;
+   bottom: 0;
     border: 1px solid rgb(223, 184, 184);
     background-color: rgb(65, 63, 63);
+    margin-bottom: 0;
+    position: relative;
+
 }
 .copyright{
     width:50%;
@@ -76,4 +87,10 @@ footer{
     border-left: 1px solid rgb(205, 145, 145);
     height: 100px;
     align-items: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
 }
