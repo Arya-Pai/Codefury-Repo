@@ -79,6 +79,8 @@
     background-color: rgb(65, 63, 63);
     margin-bottom: 0;
     position: relative;
+    font-weight: bold;
+    color: bisque;
 
 }
 .copyright{
@@ -101,7 +103,7 @@ body{
     margin: 0px;
 }
 #github{
-    width=30px;
+    width:30px;
     height: 30px;
     display: flex;
     margin: 10px;
@@ -109,7 +111,7 @@ body{
 
 }
 #Email{
-    width = 30px;
+    width :30px;
     height :  30px;
     display: flex;
 }
@@ -122,4 +124,8 @@ body{
 }
 .side-panel ul li a:hover{
     font-size:20px;
+}
+main{
+    background-color: rgb(164, 164, 219);
+    margin: 2px 0px;
 }
