@@ -95,6 +95,11 @@
 .card {
     max-width: 450px;
     padding: 10px;
+    margin: 20px;
+    transition: 0.6s;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 .row{
     display: flex;
