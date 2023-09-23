@@ -61,7 +61,7 @@
 .body{
     display: flex;
     height: 1000px;
-    background-color:rgb(55, 133, 107);
+    background-color:rgb(131, 212, 239);
     
     /* margin: auto; */
 }
@@ -87,10 +87,24 @@ footer{
     border-left: 1px solid rgb(205, 145, 145);
     height: 100px;
     align-items: center;
+    flex-direction: column;
 }
 body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0px;
+}
+#github{
+    width=30px;
+    height: 30px;
+    display: flex;
+    margin: 10px;
+    
+
+}
+#Email{
+    width = 30px;
+    height :  30px;
+    display: flex;
 }
