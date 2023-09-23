@@ -35,7 +35,7 @@
     background-color: #333;
     overflow-x: hidden;
     transition: 0.3s;
-    z-index: 0;
+    z-index: 0;    
 }
 
 .side-panel.open {
@@ -48,6 +48,9 @@
     margin: 10px 0px;
     color: aquamarine;
     border-bottom: 1px solid whitesmoke;
+    min-height: 30px;
+
+    
 }
 .navbar{
     height: 100px;
@@ -62,18 +65,22 @@
     display: flex;
     height: 1000px;
     background-color:rgb(131, 212, 239);
+    margin:10px 0px;
+    padding: 10px;
     
     /* margin: auto; */
 }
-footer{
+#footer{
     display: flex ;
     align-items: center;
     width: 100%;
-   bottom: 0;
+    bottom: 0;
     border: 1px solid rgb(223, 184, 184);
     background-color: rgb(65, 63, 63);
     margin-bottom: 0;
-    position: relative;
+    position: static;
+    font-weight: bold;
+    color: bisque;
 
 }
 .copyright{
@@ -96,7 +103,7 @@ body{
     margin: 0px;
 }
 #github{
-    width=30px;
+    width:30px;
     height: 30px;
     display: flex;
     margin: 10px;
@@ -104,7 +111,21 @@ body{
 
 }
 #Email{
-    width = 30px;
+    width :30px;
     height :  30px;
     display: flex;
+}
+.side-panel ul li a{
+    text-decoration: none;
+    color: beige;
+    padding:0% 35%;
+    
+    
+}
+.side-panel ul li a:hover{
+    font-size:20px;
+}
+main{
+    background-color: rgb(164, 164, 219);
+    margin: 2px 0px;
 }

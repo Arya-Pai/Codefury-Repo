@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    
+
+    <title>meditation</title>
+    <style>
+      body {
+        background-image: url("https://i.gifer.com/Ort.gif");
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="hello.js"></script>
+    <div class="nav">
+      <div class="title">
+        <h3 id="h3">Meditate easily with our meditation guides</h3>
+      </div>
+
+      <div class="listen">
+        <h4 id="h4">Listen</h4>
+
+        <div class="contain">
+          <audio id="sound" controls autoplay loop src="./calm.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h1 style="text-align: center;"><em>Step 1: Posture</em></h1>
+      <br />
+      <p style="text-align: center;">
+        We suggest sitting upright with the spine erect while still being
+        comfortable. It is not necessary to get into a precise or difficult
+        posture to meditate! If you are uncomfortable or straining to be in a
+        certain position, you will not be able to relax completely.Sometimes people feel they have to sit perfectly still while meditating. Our advice is to just be natural. If you have an itch, go ahead and scratch it. Feel free to shift your position if you are uncomfortable. This meditation style is all about being natural.
+      </p>
+      <br />
+      
+
+      <h1 style="text-align: center;"><em>Step 2: Timer</h1></em>
+      <br />
+      <p style="text-align: center;">
+        Usually 15-30 minutes is a good meditation time, although if you are new
+        to meditation, you may want to start with 5 or 10 and build up. Don't forget to calmly breat in and breath out!
+      </p>
+      <div class="timer">
+        <form id="time">
+          <br />
+          <input id="hrs"
+            type="text"
+            name="fname"
+            value=""
+            placeholder="&nbsp;&nbsp;&nbsp;Enter No. of Hours"
+            requires
+          />&nbsp;&nbsp;Hours<br />
+          <input id="mins"
+            type="text"
+            name="lname"
+            value=""
+            placeholder="&nbsp;&nbsp;Enter No. of Minutes"
+            required
+          />&nbsp;&nbsp;Minuntes<br />
+        </form>
+
+        <button id="btn"onclick="myFunction()">Start Timer</button>
+
+        <div id="progress">
+          <div id="progress-bar"></div>
+        </div>
+
+        
+        <h2 id="done"></h2>
+      </div>
+    </div>
+  </body>
+</html>

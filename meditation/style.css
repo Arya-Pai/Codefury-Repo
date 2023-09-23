@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.nav{
+    background-color: #6D7F73;
+    opacity: 55%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    
+}
+
+
+@font-face {
+    font-family: calm1;
+    src: url(OddlyCalmingRegular-7B89V.ttf);
+}
+@font-face {
+    font-family: calm2;
+    src: url(SunnySpellsBasicRegular-Yz1Wv.ttf);
+}
+
+#h3{
+    font-family:'calm2';
+  font-size: 70px;
+  color:rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.listen{
+
+    display:flex;
+    justify-items: center;
+    justify-content: space-around;
+    padding-left: 5px;
+
+}
+.contain:hover{
+    cursor:pointer;
+
+}
+#h4{
+    margin-top: 0%;
+    font-family:'calm1' ;
+    font-size: 50px;
+    font-weight: bold;
+    
+
+}
+.contain{
+    display: flex;
+    height:fit-content ;
+    width: fit-content;
+    padding-right: 10px;
+    margin-left: 10px;
+    
+}
+@font-face {
+    font-family: text;
+    src: url(PlayfairDisplayRegular-ywLOY.ttf);
+}
+.content{
+   
+    padding: 10px;
+    margin: 5px;
+    font-family: 'text';
+    align-items: center;
+    color: rgb(239, 229, 176);
+    font-size: 20px;
+  
+    
+    opacity: 80%;
+}
+#progress{
+    width: 60%;
+    height: 20px;
+    margin: 0px auto;
+    border-radius: 20px;
+    background-color: #98e4bd;
+    margin-top: 10px;
+}
+  
+  #progress-bar{
+    height: 20px;
+    background-color: rgb(217, 168, 228);
+    border-radius: 10px;
+  }
+  button{
+    margin-left: 677px ;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 0%;
+
+  }
+  #hrs{
+    border-radius: 5px;
+    border: none;
+    width:140px;
+    height:20px;
+    background-color: beige;
+  }
+  #mins{
+    border-radius: 5px;
+    border: none;
+    width:140px;
+    height:20px;
+    background-color: beige;
+  }
+  
+   
+  
+  #time{
+    margin-left: 43%;
+    padding: 0;
+  }
+  #btn{
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+    width:80px;
+    color: darkgreen;
+    background-color: beige;
+  }
+  #btn:hover{
+    cursor: pointer;
+  }
+  #done{
+    margin-left: 42%;
+    
+  }
