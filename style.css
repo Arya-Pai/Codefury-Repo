@@ -184,3 +184,7 @@
 .card a{
     text-decoration: none;
 }
+.card-header img{
+    width:300px;
+    height: 200px;;
+}
