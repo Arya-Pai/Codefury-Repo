@@ -13,3 +13,21 @@ function closeSidePanel() {
     sidePanel.classList.remove('open');
 }
 
+function showPopup() {
+    var overlay = document.getElementById("overlay");
+    var popup = document.getElementById("popup");
+    overlay.style.display = "block";
+    popup.style.display = "block";
+    popup.classList.add("show-popup");
+}
+
+function hidePopup() {
+    var overlay = document.getElementById("overlay");
+    var popup = document.getElementById("popup");
+    overlay.style.display = "none";
+    popup.style.display = "none";
+    popup.classList.remove("show-popup");
+}
+window.onload = function() {
+    showPopup();
+};
